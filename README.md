@@ -34,6 +34,19 @@ The following classifiers were explored:
 
 Hyperparameter optimization was performed using 5-fold cross-validation with macro F1-score as the optimization metric.
 
+## Results
+
+The optimized model achieved strong performance on the held-out test set:
+
+- **Accuracy:** 0.99
+- **Macro F1-score:** 0.99
+- **CD4+ T activated F1-score:** 0.98
+- **NK F1-score:** 0.98
+- **Naive CD20+ B F1-score:** 1.00
+
+The final model used a Random Forest classifier with feature selection and hyperparameter optimization through 5-fold cross-validation.
+
+
 ## Dimensionality Reduction & Clustering
 
 The project explores:
@@ -66,11 +79,13 @@ To understand which genes contribute most strongly to cell-type predictions, the
 - LIME
 - ELI5
 
+
 ## Repository Structure
 
 ```text
 scRNA-cell-type-classification/
 ├── scRNA_cell_type_classification.ipynb
 └── README.md
-<img width="830" height="587" alt="image" src="https://github.com/user-attachments/assets/fcd93127-6f20-4f41-93a9-b96d402089d3" />
+```
+<img width="830" height="587" alt="Project visualization" src="https://github.com/user-attachments/assets/fcd93127-6f20-4f41-93a9-b96d402089d3" />
 
